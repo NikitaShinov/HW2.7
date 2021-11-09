@@ -4,8 +4,6 @@
 //
 //  Created by Никита Шинов on 09.11.2021.
 //
-import Foundation
-
 struct Person {
     
     var firstName: String
@@ -13,9 +11,10 @@ struct Person {
     var phoneNumber : String
     var email: String
     var name: String {
-        return "\(firstName) + \(lastName)"
+        return "\(firstName) \(lastName)"
     }
-    func createContact () -> [Person] {
+    
+    static func createContact () -> [Person] {
         
         var contacts: [Person] = []
         
@@ -24,7 +23,7 @@ struct Person {
         let shuffledPhoneNumbers = phoneNumbers.shuffled()
         let shuffledEmails = emails.shuffled()
         
-        for counter in 0...10 {
+        for counter in 0...9 {
             
             let person = Person(firstName: shuffledNames[counter],
                                 lastName: shuffledSurnames[counter],
