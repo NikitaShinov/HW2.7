@@ -6,10 +6,12 @@
 //
 struct Person {
     
+    
     var firstName: String
     var lastName: String
     var phoneNumber : String
     var email: String
+    var photo: String
     var name: String {
         return "\(firstName) \(lastName)"
     }
@@ -22,13 +24,15 @@ struct Person {
         let shuffledSurnames = lastNames.shuffled()
         let shuffledPhoneNumbers = phoneNumbers.shuffled()
         let shuffledEmails = emails.shuffled()
+        let shuffledphotos = photos.shuffled()
         
         for counter in 0...9 {
             
             let person = Person(firstName: shuffledNames[counter],
                                 lastName: shuffledSurnames[counter],
                                 phoneNumber: shuffledPhoneNumbers[counter],
-                                email: shuffledEmails[counter])
+                                email: shuffledEmails[counter],
+                                photo: shuffledphotos[counter])
             
             contacts.append(person)
             
