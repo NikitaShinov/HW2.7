@@ -64,19 +64,43 @@
 		B65775372739A5F70043F2B6 /* HW2.7 */ = {
 			isa = PBXGroup;
 			children = (
-				B65775382739A5F70043F2B6 /* AppDelegate.swift */,
-				B657753A2739A5F70043F2B6 /* SceneDelegate.swift */,
-				B6577550273B29E30043F2B6 /* FirstTableViewController.swift */,
-				B6577552273B2CB00043F2B6 /* SecondTableViewController.swift */,
-				B6577554273BE3FD0043F2B6 /* DetailsViewController.swift */,
-				B657754C273B097E0043F2B6 /* Person.swift */,
-				B657754E273B0A4A0043F2B6 /* DataManager.swift */,
+				B6577557273C23890043F2B6 /* Model */,
+				B6577556273C23310043F2B6 /* ViewControllers */,
+				B6577558273C23B00043F2B6 /* Other */,
 				B657753E2739A5F70043F2B6 /* Main.storyboard */,
-				B65775412739A5FC0043F2B6 /* Assets.xcassets */,
 				B65775432739A5FC0043F2B6 /* LaunchScreen.storyboard */,
 				B65775462739A5FC0043F2B6 /* Info.plist */,
 			);
 			path = HW2.7;
+			sourceTree = "<group>";
+		};
+		B6577556273C23310043F2B6 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B6577550273B29E30043F2B6 /* FirstTableViewController.swift */,
+				B6577552273B2CB00043F2B6 /* SecondTableViewController.swift */,
+				B6577554273BE3FD0043F2B6 /* DetailsViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B6577557273C23890043F2B6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B657754C273B097E0043F2B6 /* Person.swift */,
+				B657754E273B0A4A0043F2B6 /* DataManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B6577558273C23B00043F2B6 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				B65775412739A5FC0043F2B6 /* Assets.xcassets */,
+				B65775382739A5F70043F2B6 /* AppDelegate.swift */,
+				B657753A2739A5F70043F2B6 /* SceneDelegate.swift */,
+			);
+			path = Other;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
